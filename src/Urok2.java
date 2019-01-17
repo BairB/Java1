@@ -3,10 +3,10 @@ import java.util.Random;
 
 public class Urok2 {
     Random random = new Random();
-    static Integer[] a = new Integer[10];
-    static Integer[] b = new Integer[8];
-    static Integer[] c = {1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1};
-    static Integer[][] d = new Integer[3][3];
+    Integer[] a = new Integer[10];
+    Integer[] b = new Integer[8];
+    Integer[] c = {1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1};
+    Integer[][] d = new Integer[3][3];
     static Urok2 u = new Urok2();
     public static void main(String[] args) {
         u.zadacha1();
