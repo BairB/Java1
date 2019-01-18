@@ -14,18 +14,26 @@ public class Urok3 {
     }
     public void ugadai(int x, int p) {
         Scanner scanner = new Scanner(System.in);
-        int i = 0;
-        while (i < p) {
-            System.out.println("vvedite chislo");
-            int z = scanner.nextInt();
-            if (x == z) {
-                System.out.println("ugadal");
-                break;
+
+        do {
+            int i = 0;
+            while (i < p) {
+                System.out.println("vvedite chislo");
+                int z = scanner.nextInt();
+                if (x == z) {
+                    System.out.println("ugadal");
+                    break;
+                }
+                else {
+                    System.out.println("Your number is " + ((x > z)?"greater" : "less."));
+                    i++;
+                }
             }
-            else {
-                System.out.println("ne ugadal");
-                i++;
+            if(i == 3){
+                System.out.println("You lost!");
             }
+            System.out.print("Repeat the game?\n[1 - yes / 0 - no]: ");
         }
+        while (scanner.next().equals("1"));
     }
 }
