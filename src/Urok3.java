@@ -16,14 +16,22 @@ public class Urok3 {
         Scanner scanner = new Scanner(System.in);
         int i = 0;
         while (i < p) {
+            System.out.println("vvedite chislo");
             int z = scanner.nextInt();
             if (x == z) {
                 System.out.println("ugadal");
                 break;
             }
+            else if(x > z) {
+                System.out.println("загаданное число больше");
+                i++;
+            }
+            else if(x < z) {
+                System.out.println("загаданное число меньше");
+                i++;
+            }
             else {
                 System.out.println("ne ugadal");
-                i++;
             }
         }
     }
