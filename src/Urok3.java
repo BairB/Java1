@@ -22,16 +22,9 @@ public class Urok3 {
                 System.out.println("ugadal");
                 break;
             }
-            else if(x > z) {
-                System.out.println("загаданное число больше");
-                i++;
-            }
-            else if(x < z) {
-                System.out.println("загаданное число меньше");
-                i++;
-            }
             else {
                 System.out.println("ne ugadal");
+                i++;
             }
         }
     }
