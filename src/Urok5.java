@@ -11,6 +11,9 @@ public class Urok5 {
         persArr[4] = new Person("Dima", "program", "dima@mail.ru", 112233, 34, 900);
 
         for(int i = 0; i < persArr.length; i++) {
+            if(persArr[i].getAge() > 40) {
+                System.out.println(persArr[i].info());
+            }
         }
     }
 }
@@ -26,5 +29,12 @@ class Person{
         this.telephone = t;
         this.age = a;
         this.zarplata = z;
+    }
+    public Integer getAge() {
+        return age;
+    }
+
+    String info() {
+        return fio + " " + dolzhnost +" "+ age +" " + zarplata;
     }
 }
