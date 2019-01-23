@@ -2,10 +2,10 @@ package Urok6;
 
 public abstract class Animal implements IAnimal {
     protected int l_run;
-    protected int l_jump;
+    protected float l_jump;
     protected int l_swim;
 
-    public Animal(int r, int j, int s){
+    public Animal(int r, float j, int s){
         this.l_run = r;
         this.l_jump = j;
         this.l_swim = s;
@@ -21,7 +21,7 @@ public abstract class Animal implements IAnimal {
     }
 
     @Override
-    public boolean jump(int x) {
+    public boolean jump(float x) {
         return x <= l_jump;
     }
 }
