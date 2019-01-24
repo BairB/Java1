@@ -9,7 +9,7 @@ public class Cat {
         this.jor = jor;
     }
     public boolean eat(Tarelka tarelka) {
-        if(tarelka.obem() >= jor) {
+        if(sytost == false && tarelka.obem() >= jor) {
             tarelka.sedeno(jor);
             return sytost = true;
         }
