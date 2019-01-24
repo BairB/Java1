@@ -11,4 +11,7 @@ public class Tarelka {
     public int obem(){
         return o;
     }
+    public void dobavka(){
+        o = o + 10;
+    }
 }
