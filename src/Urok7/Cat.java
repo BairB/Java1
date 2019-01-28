@@ -7,6 +7,7 @@ public class Cat {
     public Cat(String name, int jor){
         this.name = name;
         this.jor = jor;
+        this.sytost = false;
     }
     public boolean eat(Tarelka tarelka) {
         if(sytost == false && tarelka.obem() >= jor) {

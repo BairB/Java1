@@ -6,6 +6,8 @@ import java.util.Random;
 public class Urok7 {
     public static void main(String[] args) {
         Random random = new Random();
+        Forma forma = new Forma();
+
         Cat[] cats = new Cat[5];
         ArrayList<String> catname = new ArrayList<>();
         catname.add("vasya");
