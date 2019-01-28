@@ -1,17 +1,22 @@
 package Urok7;
 
 public class Tarelka {
-    private int o;
-    public Tarelka(int o){
+    private int o, v;
+    public Tarelka(int o, int v){
         this.o = o;
+        this.v = v;
     }
     public void sedeno(int jor) {
         o = o - jor;
     }
-    public int obem(){
+    public int getO(){
         return o;
     }
-    public void dobavka(){
-        o = o + 10;
+    public int getV(){
+        return v;
+    }
+    public void dobavka(int o){
+        if(o > v) this.o = o;
+        else this.o = o + 10;
     }
 }
