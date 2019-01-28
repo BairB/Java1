@@ -1,7 +1,7 @@
 package Urok7;
 
 public class Tarelka {
-    private int o, v;
+    protected int o, v;
     public Tarelka(int o, int v){
         this.o = o;
         this.v = v;

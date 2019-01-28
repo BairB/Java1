@@ -1,9 +1,9 @@
 package Urok7;
 
 public class Cat {
-    private String name;
-    private int jor;
-    private boolean sytost = false;
+    protected String name;
+    protected int jor;
+    protected boolean sytost = false;
 
     public Cat(String name, int jor){
         this.name = name;
