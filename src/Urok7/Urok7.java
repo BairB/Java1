@@ -1,7 +1,9 @@
 package Urok7;
 
+import java.awt.*;
 import java.util.ArrayList;
 import java.util.Random;
+import java.awt.Graphics;
 
 public class Urok7 {
     public static void main(String[] args) {
